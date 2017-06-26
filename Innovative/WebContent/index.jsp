@@ -106,7 +106,6 @@
 					<li class="nav-item">
 						<a class="nav-link active" data-toggle="tab" href="#home" role="tab">
 							<b>
-							
 							R<br>
 							E<br>
 							G<br>
