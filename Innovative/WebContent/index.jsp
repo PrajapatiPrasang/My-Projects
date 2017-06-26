@@ -138,33 +138,34 @@
 				<div class="tab-content">
 					<div class="tab-pane active" id="home" role="tabpanel" data-mh="log-tab">
 						<div class="title h6">Register to Olympus</div>
-						<form class="content">
+						<form class="content" action="${pageContext.request.contextPath}/RegistrationController" method="post">
 							<div class="row">
 								<div class="col-lg-6 col-md-6">
 									<div class="form-group label-floating">
+									
 										<label class="control-label">First Name</label>
-										<input class="form-control" placeholder="" type="text">
+										<input class="form-control" placeholder="" type="text" name="fn">
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6">
 									<div class="form-group label-floating">
 										<label class="control-label">Last Name</label>
-										<input class="form-control" placeholder="" type="text">
+										<input class="form-control" placeholder="" type="text" name="ln">
 									</div>
 								</div>
 								<div class="col-xl-12 col-lg-12 col-md-12">
 									<div class="form-group label-floating">
 										<label class="control-label">Your Email</label>
-										<input class="form-control" placeholder="" type="email">
+										<input class="form-control" placeholder="" type="email" name="email">
 									</div>
 									<div class="form-group label-floating">
 										<label class="control-label">Your Password</label>
-										<input class="form-control" placeholder="" type="password">
+										<input class="form-control" placeholder="" type="password" name="password">
 									</div>
 
 									<div class="form-group date-time-picker label-floating">
 										<label class="control-label">Your Birthday</label>
-										<input type= "date" name="datetimepicker"/>
+										<input type= "date" name="birthdate"/>
 										<span class="input-group-addon">
 										<!-- 	<svg class="olymp-calendar-icon"><use xlink:href="icons/icons.svg#olymp-calendar-icon"></use></svg> -->
 										</span>
@@ -172,22 +173,24 @@
 
 									<div class="form-group label-floating is-select">
 										<label class="control-label">Your Gender</label>
-										<select class="selectpicker form-control">
-											<option value="MA">Male</option>
-											<option value="FE">Female</option>
+										<select class="selectpicker form-control" name=gender>
+											<option value="MALE">Male</option>
+											<option value="FEMALE">Female</option>
 										</select>
+										
 									</div>
 
 									<div class="remember">
 										<div class="checkbox">
-											<label>
+											<!-- <label>
 												<input name="optionsCheckboxes" type="checkbox">
 												I accept the <a href="#">Terms and Conditions</a> of the website
-											</label>
+											</label> -->
 										</div>
 									</div>
 
-									<a href="#" class="btn btn-purple btn-lg full-width">Complete Registration!</a>
+									<a href="#" class="btn btn-purple btn-lg full-width" >Complete Registration!</a>
+									<input type="submit" >Complete Registration!</a>
 								</div>
 							</div>
 						</form>
