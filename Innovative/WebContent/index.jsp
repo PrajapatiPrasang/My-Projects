@@ -94,7 +94,24 @@
 				<p>We are the best and biggest social network with 5 billion active users all around the world. Share you
 					thoughts, write blog posts, show your favourite music via Stopify, earn badges and much more!
 				</p>
-				
+				<%
+String success=(String)request.getAttribute("Success");
+String firstname=(String)session.getAttribute("firstname");
+String lastname=(String)session.getAttribute("lastname");
+if(success != null){
+out.print("<p style='background-color=white; font-size:24px; color:black'><b>"+success +", "+ firstname+ " "+ lastname+ "</b></p>");
+} %>
+<% 
+String msg=(String)request.getAttribute("msg");
+if(msg != null){
+out.print("<p style='background-color=white; font-size:24px; color:black'><b>"+msg +"</b></p>");
+} %>
+
+<% 
+String error=(String)request.getAttribute("error");
+if(error != null){
+out.print("<p style='background-color=white; font-size:24px; color:black'><b>"+error +"</b></p>");
+} %>
 							
 			</div>
 		</div>
@@ -136,7 +153,7 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div class="tab-pane active" id="home" role="tabpanel" data-mh="log-tab">
-						<div class="title h6">Register to Olympus</div>
+						<div class="title h6">Register to Innovative</div>
 						<form class="content" action="${pageContext.request.contextPath}/RegistrationController" method="post">
 							<div class="row">
 								<div class="col-lg-6 col-md-6">
@@ -188,10 +205,11 @@
 										</div>
 									</div>
 
-									<a href="#" class="btn btn-purple btn-lg full-width" >Complete Registration!</a>
-									<input type="submit" >Complete Registration!</a>
+									
+									
 								</div>
 							</div>
+							<input class="btn btn-purple btn-lg full-width" type="submit" value="Complete Registration!">
 						</form>
 					</div>
 

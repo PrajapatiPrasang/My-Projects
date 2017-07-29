@@ -5,29 +5,29 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="VO.RegistrationVO" table="Registration">
+	<class name="VO.RegistrationVO" table="registration">
 
 		<id name="registrationid" type="int" column="ID">
 			<generator class="increment" />
 		</id>
 		
-		<property name="firstname">
+		<property name="FirstName" type="java.lang.String">
 			<column name="FirstName" />
 		</property>
 		
-		<property name="lastname">
+		<property name="LastName" type="java.lang.String">
 			<column name="LastName" />
 		</property>
-		<property name="email">
+		<property name="Email" type="java.lang.String">
 			<column name="Email" />
 		</property>
-		<property name="password">
+		<property name="Password" type="java.lang.String">
 			<column name="Password" />
 		</property>
-		<property name="birthdate">
+		<property name="Birthdate" type="java.lang.String">
 			<column name="Birthdate" />
 		</property>
-		<property name="gender">
+		<property name="Gender" type="java.lang.String">
 			<column name="Gender" />
 		</property>
 		

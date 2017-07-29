@@ -2,56 +2,56 @@ package VO;
 
 public class RegistrationVO {
 	private int registrationid;
-	private String firstname;
-	private String lastname;
-	private String email;
-	private String password;
-	private String birthdate;
-	private String gender;
+	private String FirstName;
+	private String LastName;
+	private String Email;
+	private String Password;
+	private String Birthdate;
+	private String Gender;
+	
 	public int getRegistrationid() {
 		return registrationid;
 	}
 	public void setRegistrationid(int registrationid) {
 		this.registrationid = registrationid;
 	}
-	public String getFirstname() {
-		return firstname;
+	public String getFirstName() {
+		return FirstName;
 	}
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setFirstName(String firstName) {
+		FirstName = firstName;
 	}
-	public String getLastname() {
-		return lastname;
+	public String getLastName() {
+		return LastName;
 	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	public void setLastName(String lastName) {
+		LastName = lastName;
 	}
 	public String getEmail() {
-		return email;
+		return Email;
 	}
 	public void setEmail(String email) {
-		this.email = email;
+		Email = email;
 	}
 	public String getPassword() {
-		return password;
+		return Password;
 	}
 	public void setPassword(String password) {
-		this.password = password;
+		Password = password;
 	}
+	
 	public String getBirthdate() {
-		return birthdate;
+		return Birthdate;
 	}
 	public void setBirthdate(String birthdate) {
-		this.birthdate = birthdate;
+		Birthdate = birthdate;
 	}
 	public String getGender() {
-		return gender;
+		return Gender;
 	}
 	public void setGender(String gender) {
-		this.gender = gender;
+		Gender = gender;
 	}
-	
-	
 	
 	
 
