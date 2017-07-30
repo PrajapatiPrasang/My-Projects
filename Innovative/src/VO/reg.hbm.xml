@@ -30,7 +30,10 @@
 		<property name="Gender" type="java.lang.String">
 			<column name="Gender" />
 		</property>
-		
+		    
+        <many-to-one name="loginvo" class="VO.loginVO" fetch="join">
+            <column name="LOGIN_id" />
+        </many-to-one>
 		
 		
 	</class>

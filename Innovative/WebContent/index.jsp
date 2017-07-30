@@ -215,16 +215,18 @@ out.print("<p style='background-color=white; font-size:24px; color:black'><b>"+e
 
 					<div class="tab-pane" id="profile" role="tabpanel" data-mh="log-tab">
 						<div class="title h6">Login to your Account</div>
-						<form class="content">
+						<form class="content" action="${pageContext.request.contextPath}/LoginController?flag=login" method="post">
+						
 							<div class="row">
+							
 								<div class="col-xl-12 col-lg-12 col-md-12">
 									<div class="form-group label-floating">
 										<label class="control-label">Your Email</label>
-										<input class="form-control" placeholder="" type="email">
+										<input class="form-control" placeholder="" type="email" name="email">
 									</div>
 									<div class="form-group label-floating">
 										<label class="control-label">Your Password</label>
-										<input class="form-control" placeholder="" type="password">
+										<input class="form-control" placeholder="" type="password" name="password">
 									</div>
 
 									<div class="remember">
@@ -238,7 +240,7 @@ out.print("<p style='background-color=white; font-size:24px; color:black'><b>"+e
 										<a href="#" class="forgot">Forgot my Password</a>
 									</div>
 
-									<a href="#" class="btn btn-lg btn-primary full-width">Login</a>
+									<input class="btn btn-purple btn-lg full-width" type="submit" value="Login">
 
 									<div class="or"></div>
 

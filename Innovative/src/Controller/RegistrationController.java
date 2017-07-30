@@ -14,7 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import DAO.RegistrationDAO;
+import DAO.loginDAO;
 import VO.RegistrationVO;
+import VO.loginVO;
 
 /**
  * Servlet implementation class RegistrationController
@@ -100,9 +102,13 @@ public class RegistrationController extends HttpServlet {
 		{
 			e.printStackTrace();
 		}
-		
+		loginDAO logindao=new loginDAO();
+		loginVO loginVO=new loginVO();
+		loginVO.setEmail(Email);
+		loginVO.setPassword(Password);
+		int login_id = logindao.add_login(loginVO );
 		String success= "Successfully Registered";
-		request.setAttribute("success", success);
+		request.setAttribute("Success", success);
 		session.setAttribute("firstname", FirstName);
 		session.setAttribute("lastname", LastName);
 		System.out.println("before send redirect");

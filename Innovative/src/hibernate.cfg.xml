@@ -16,6 +16,7 @@
 		
 		<!-- Mapping files -->
 		<mapping resource="VO/reg.hbm.xml" />
+		<mapping resource="VO/loginVO.hbm.xml" />
 		
 				
  

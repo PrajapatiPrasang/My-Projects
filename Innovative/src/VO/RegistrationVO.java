@@ -8,7 +8,16 @@ public class RegistrationVO {
 	private String Password;
 	private String Birthdate;
 	private String Gender;
+	private loginVO loginvo;
+
 	
+	
+	public loginVO getLoginvo() {
+		return loginvo;
+	}
+	public void setLoginvo(loginVO loginvo) {
+		this.loginvo = loginvo;
+	}
 	public int getRegistrationid() {
 		return registrationid;
 	}
