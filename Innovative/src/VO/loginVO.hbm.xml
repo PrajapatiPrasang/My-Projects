@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 20, 2015 12:57:35 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="VO.loginVO" table="LOGIN_VO">
+        <id name="login_id" type="int">
+            <column name="LOGIN_ID" />
+            <generator class="increment" />
+        </id>
+     <property name="Email" type="java.lang.String">
+			<column name="Email" />
+		</property>
+        <property name="Password" type="java.lang.String">
+            <column name="Password" />
+        </property>
+       
+    </class>
+</hibernate-mapping>
